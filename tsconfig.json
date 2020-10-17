@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "jsxFactory": "jsx",
+    "inlineSourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noLib": false,
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es3",
+    "typeRoots": ["src/@types", "node_modules/@types"],
+    "paths": {
+      "react": ["preact/compat"],
+      "react-dom": ["preact/compat"],
+      "src/*": ["./src/*"]
+    }
+  },
+  "exclude": ["build", "node_modules"],
+  "include": [
+    "module-alias.js",
+    "api",
+    "scripts",
+    "src",
+    "package.json",
+    "jest.config.js",
+    "webpack.config.js"
+  ]
+}
